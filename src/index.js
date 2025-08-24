@@ -1,7 +1,7 @@
 import prompt from 'prompt';
 import mainPrompt from './prompt/prompt-main.js';
 import createQRCode from './services/qr-code/create.js';
-import createPassword from './services/passoword/create.js';
+import createPassword from './services/password/create.js';
 
 
 
@@ -13,7 +13,7 @@ async function main() {
 
         } else if (choose.select === '2') {
             await createPassword();
-            
+
         }
     });
     prompt.start();
